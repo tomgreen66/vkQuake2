@@ -1666,6 +1666,7 @@ qboolean QVk_Init()
 	VkInstanceCreateInfo createInfo = {
 		.sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO,
 		.pNext = NULL,
+		.flags = VK_INSTANCE_CREATE_ENUMERATE_PORTABILITY_BIT_KHR,
 		.pApplicationInfo = &appInfo,
 		.enabledLayerCount = 0,
 		.ppEnabledLayerNames = NULL,
